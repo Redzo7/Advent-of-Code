@@ -1,0 +1,2 @@
+#print(sum([[ord(c)-ord('a')*c.islower()-ord('A')*c.isupper()+26*c.isupper()+1 for c in x[len(x)//2:] if c in x[:len(x)//2]][0]for x in open("03_in.txt").read().split('\n')]))
+lines=open("03_in.txt").read().split('\n');print(sum([[ord(c)-ord('a')*c.islower()-ord('A')*c.isupper()+26*c.isupper()+1 for c in a[0]if c in a[1]and c in a[2]][0]for a in [[t for t in lines[3*x:3*x+3]] for x in range(len(lines)//3)]]))

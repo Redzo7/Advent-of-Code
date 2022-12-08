@@ -1,0 +1,2 @@
+#print(sum([ord(x.split(' ')[1])-87+(x.replace(' ','')in"AYBZCX")*6+(x.replace(' ','')in"AXBYCZ")*3 for x in open("02_in.txt").read().split('\n')]))
+print(sum([ord(x.split(' ')[0])-64+3 if x.split(' ')[1]in"Y"else ord({"B":"A","C":"B","A":"C"}[x.split(' ')[0]])-64 if x.split(' ')[1]in"X"else ord({"A":"B","B":"C","C":"A"}[x.split(' ')[0]])-64+6 for x in open("02_in.txt").read().split('\n')]))
